@@ -18,4 +18,3 @@ WORKDIR /app
 COPY --from=build /app/target/multi-stage-java-app-1.0.0.jar /app/app.jar
 EXPOSE 8080
 CMD ["java", "-jar", "app.jar"]
-entry
